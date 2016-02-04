@@ -1,0 +1,11 @@
+.base {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.base--children {
+    box-sizing: border-box;
+    display: block;
+    padding: 32px;
+}

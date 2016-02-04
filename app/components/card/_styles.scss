@@ -1,0 +1,82 @@
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$cardHeight: 158px;
+$avatarSize: 32px;
+$avatarOffset: 16px;
+$avatarLinkColor: rgba(0, 0, 0, 1);
+$cardImageShadow: rgba(0, 0, 0, 0.4);
+$cardAvatarShadow: rgba(0, 0, 0, 0.4);
+
+.card {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 240px;
+    margin: 0px 16px 32px 0px;
+    opacity: 1;
+    transition: all 200ms ease;
+}
+
+.card--image {
+    cursor: pointer;
+    background-size: cover;
+    background-color: $avatarLinkColor;
+    height: $cardHeight;
+    box-shadow: 0px 0px 6px $cardImageShadow;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: 50% 50%;
+}
+
+.card--avatar {
+    background-size: cover;
+    height: $avatarSize;
+    width: $avatarSize;
+    top: $avatarOffset;
+    left: $avatarOffset;
+    box-shadow: 0px 0px 2px $cardAvatarShadow;
+    display: block;
+    position: absolute;
+    background-position: 50% 50%;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.card--meta {
+    padding: $avatarOffset $avatarOffset $avatarOffset ($avatarSize + ($avatarOffset * 2));
+    height: $avatarSize + ($avatarOffset * 2);
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.card--user-link {
+    color: $avatarLinkColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 14px;
+
+    &:after {
+        content: "";
+        height: $avatarSize;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+    }
+}
+
+.card--preload {
+    display: none;
+    overflow: hidden;
+    height: 0;
+}

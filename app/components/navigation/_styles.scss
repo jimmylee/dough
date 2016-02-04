@@ -1,0 +1,26 @@
+.navigation {
+    display: block;
+    margin-top: 16px;
+}
+
+.navigation--link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 1);
+    transition: background 200ms ease;
+    font-weight: 600;
+    padding: 8px;
+    margin: 0px 8px 8px 0px;
+    font-size: .8rem;
+    letter-spacing: 1px;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    &:active {
+        background: blue;
+    }
+}
