@@ -5,8 +5,8 @@
   "homepage": "https://github.com/meanJim/dough#readme",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/gulp development",
-    "dev": "./node_modules/.bin/gulp development",
+    "start": "gulp development",
+    "dev": "gulp development",
     "build": "NODE_ENV=production gulp production"
   },
   "keywords": [
