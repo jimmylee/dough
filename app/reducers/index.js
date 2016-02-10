@@ -3,6 +3,6 @@ import { rootReducer } from './root-reducer';
 import { routeReducer } from 'react-router-redux';
 
 export default combineReducers({
-    rootReducer,
-    route: routeReducer
+  rootReducer,
+  route: routeReducer
 });

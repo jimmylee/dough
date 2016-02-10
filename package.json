@@ -55,7 +55,6 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "classnames": "^2.2.3",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.0",

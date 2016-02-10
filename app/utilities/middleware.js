@@ -8,11 +8,11 @@ import thunk from 'redux-thunk';
 const reduxRouterMiddleware = syncHistory( browserHistory );
 
 const createStoreWithMiddleware = applyMiddleware(
-    reduxRouterMiddleware,
-    thunk
+  reduxRouterMiddleware,
+  thunk
 )(createStore);
 
 export default {
-    createStore: createStoreWithMiddleware,
-    history: browserHistory
+  createStore: createStoreWithMiddleware,
+  history: browserHistory
 };

@@ -28,7 +28,6 @@
     "no-trailing-spaces": 1,
     "no-extra-boolean-cast": 0,
     "no-unused-vars": 1,
-    "max-len": [1, 120, 4],
     "new-cap": 0,
     "no-var": 2,
     "camelcase": 1,

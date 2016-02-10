@@ -1,11 +1,27 @@
 .base {
-    display: block;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+
+  &-left {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  &-right {
+    width: 100%;
+    position: relative;
+  }
 }
 
-.base--children {
-    box-sizing: border-box;
-    display: block;
-    padding: 32px;
+@media screen and (max-width: 480px) {
+  .base {
+    flex-direction: column-reverse;
+
+    &-left {
+      width: 100%;
+    }
+  }
 }

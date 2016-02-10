@@ -1,29 +1,30 @@
 'use strict';
 
 import React from 'react';
-import classNames from 'classnames';
 import { Link } from 'react-router';
+import MenuItem from '../menu-item';
+
+const links = [
+  {url: '/one', title: 'one', description: 'this is one'},
+  {url: '/two', title: 'two', description: 'this is two'},
+  {url: '/three', title: 'three', description: 'this is three'}
+];
 
 export default React.createClass({
-    render() {
-        const navigationClass = classNames('navigation');
-        const navigationLinkClass = classNames('navigation--link');
+  render() {
+    const linkElements = links.map((each) => {
+      const { url, title, description } = each;
+      return (
+        <Link to={url} key={url}>
+          <MenuItem title={title} description={description} />
+        </Link>
+      )
+    });
 
-        return (
-            <nav className={ navigationClass }>
-                <Link className={ navigationLinkClass }
-                      to="/i-love-kathy">
-                      View 404
-                </Link>
-                <Link className={ navigationLinkClass }
-                      to="/">
-                      View Giphy Feed
-                </Link>
-                <Link className={ navigationLinkClass }
-                      to="/your-cards">
-                      View Your Picks
-                </Link>
-            </nav>
-        );
-    }
+    return (
+      <nav className="navigation">
+        {linkElements}
+      </nav>
+    );
+  }
 });
