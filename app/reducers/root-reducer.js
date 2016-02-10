@@ -8,9 +8,11 @@ const initialState = {
 }
 
 export function addToSelectionById(id, state) {
+    let collection = [...state.collection];
+    let selection = [...state.selection];
     let targetItem = null;
 
-    state.collection = state.collection.filter((item) => {
+    collection = collection.filter((item) => {
         if (item.id === id) {
             targetItem = item;
 
@@ -20,15 +22,21 @@ export function addToSelectionById(id, state) {
         return true;
     });
 
-    state.selection.unshift(targetItem);
+    selection.unshift(targetItem);
 
-    return Object.assign({}, state);
+    return {
+        ...state,
+        collection,
+        selection
+    };
 }
 
 export function removeFromSelectionById(id, state) {
+    let collection = [...state.collection];
+    let selection = [...state.selection];
     let targetItem = null;
 
-    state.selection = state.selection.filter((item) => {
+    selection = selection.filter((item) => {
         if (item.id === id) {
             targetItem = item;
             return false;
@@ -37,9 +45,13 @@ export function removeFromSelectionById(id, state) {
         return true;
     });
 
-    state.collection.unshift(targetItem);
+    collection.unshift(targetItem);
 
-    return Object.assign({}, state);
+    return {
+        ...state,
+        collection,
+        selection
+    };
 }
 
 export function addDataToCollection(collection, state) {
@@ -49,22 +61,25 @@ export function addDataToCollection(collection, state) {
         return hash.hasOwnProperty(item.id) ? false : (hash[item.id] = true);
     });
 
-    state.collection = joinedCollection;
-    state.hasData = true;
-
-    return Object.assign({}, state);
+    return {
+        ...state,
+        collection: joinedCollection,
+        hasData: true
+    };
 }
 
 export function showErrorMessage(message, state) {
-    state.failure = message;
-
-    return Object.assign({}, state);
+    return {
+        ...state,
+        failure: message
+    }
 }
 
 export function removeErrorMessage(state) {
-    state.failure = null;
-
-    return Object.assign({}, state);
+    return {
+        ...state,
+        failure: null
+    }
 }
 
 export function rootReducer(state = initialState, action) {
