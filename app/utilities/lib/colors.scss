@@ -9,4 +9,36 @@ $red:                #fb1530 !default;
 $golden:             #faeed2 !default;
 $white:              #ffffff !default;
 
-//
+// Use utilities so we can keep our css clean yay
+
+.pale {
+  color: $pale !important;
+}
+
+.dark {
+  color: $dark !important;
+}
+
+.grey {
+  color: $grey !important;
+}
+
+.grey-light {
+  color: $grey-light !important;
+}
+
+.light {
+  color: $light !important;
+}
+
+.red {
+  color: $red !important;
+}
+
+.golden {
+  color: $golden !important;
+}
+
+.white {
+  color: $white !important;
+}

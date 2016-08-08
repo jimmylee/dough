@@ -20,3 +20,49 @@ $bold: 900 !default;
 $ls-xs: 0.5px;
 $ls-sm: 1px;
 $ls-md: 1.6px;
+
+// Use utilities to keep things clean
+
+.assistant {
+  font-family: $assistant !important;
+}
+
+.menlo {
+  font-family: $menlo !important;
+}
+
+.text-default {
+  font-size: $text-default !important;
+}
+
+.text-small {
+  font-size: $text-small !important;
+}
+
+.regular {
+  font-weight: $regular !important;
+}
+
+.medium {
+  font-weight: $medium !important;
+}
+
+.semibold {
+  font-weight: $semibold !important;
+}
+
+.bold {
+  font-weight: $bold !important;
+}
+
+.ls-xs {
+  letter-spacing: $ls-xs;
+}
+
+.ls-sm {
+  letter-spacing: $ls-sm;
+}
+
+.ls-md {
+  letter-spacing: $ls-md;
+}
