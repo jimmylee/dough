@@ -2,27 +2,25 @@
 
 import React from 'react';
 
-export default React.createClass({
-  render() {
-
-    var today = new Date(),
+function getToday() {
+  const today = new Date(),
         dd = today.getDate(),
         locale = "en-us",
         month = today.toLocaleString(locale, { month: "long" });
 
-    if(dd < 10) {
-      dd='0'+dd
-    }
+  return `${month} ${dd}`;
+}
 
-    today = month + ' ' + dd
-
-    console.log(today);
+export default React.createClass({
+  render() {
     // console.log(today.toLocaleString(locale, { month: "short" }));
-
+    const today = getToday();
+    console.log(today);
+    
     return (
       <header className="header">
-        <span className="header-month">
-          This is
+        <span className="current-date">
+          {today}
         </span>
       </header>
     );

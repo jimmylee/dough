@@ -1,5 +1,7 @@
 .pageOne {
-  padding: 24px;
+  padding: $space*3;
+  font-family: $assistant;
+  line-height: 1.5;
 
   h1 {
     font-size: 5rem;
@@ -15,5 +17,20 @@
 
   h4 {
     font-size: 2rem;
+  }
+
+  .exhibit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &-thumbnail {
+      display: inline-block;
+      margin: $space*3 $space*3 0 0;
+      height: 240px;
+      width: 20%;
+      min-width: 200px;
+      background-color: $golden;
+    }
   }
 }

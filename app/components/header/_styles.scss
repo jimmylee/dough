@@ -3,11 +3,11 @@
   padding: $space*3;
   box-shadow: inset 0 -1px 0 0 $grey-light;
   font-family: $assistant;
+}
 
-  &-month {
-    font-family: $assistant;
-    font-size: $text-default;
-    font-weight: $medium;
-    letter-spacing: $ls-md;
-  }
+.current-date {
+  font-family: $assistant;
+  font-size: $text-default;
+  font-weight: $medium;
+  letter-spacing: $ls-md;
 }
