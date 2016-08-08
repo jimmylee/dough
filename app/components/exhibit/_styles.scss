@@ -16,6 +16,11 @@ justify-content: flex-start;
       font-weight: $bold;
     }
 
+    &-description {
+      display: block;
+      width: auto;
+    }
+
     &-gallery {
       color: $dark;
     }
@@ -23,6 +28,16 @@ justify-content: flex-start;
     &-dates {
       color: $grey;
       font-size: $text-default;
+    }
+
+    &-thumbnail-item {
+      float: right;
+      display: inline-block;
+      margin-left: $space*2;
+      height: 80px;
+      width: 80px;
+      background-color: $golden;
+      vertical-align: top;
     }
   }
 
