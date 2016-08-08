@@ -1,4 +1,4 @@
-# Dough
+# Forked from meanjim/dough in order to make Fantastic-Waffle
 
 A starting point and codebase skeleton to use for your projects. Uses [Babel](https://babeljs.io/), [React](https://facebook.github.io/react/)/[Redux](http://redux.js.org/), [React Router](https://github.com/rackt/react-router), [SASS](http://sass-lang.com/), [Gulp](http://gulpjs.com/) and [Browserify](http://browserify.org/) and a handful of helper libraries.
 
