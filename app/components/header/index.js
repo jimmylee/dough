@@ -5,13 +5,19 @@ import React from 'react';
 export default React.createClass({
   render() {
 
-    var objDate = new Date("10/11/2009"),
+    var today = new Date(),
+        dd = today.getDate(),
         locale = "en-us",
-        month = objDate.toLocaleString(locale, { month: "long" });
+        month = today.toLocaleString(locale, { month: "long" });
 
-    console.log(month);
-    // or if you want the shorter date: (also possible to use "narrow" for "O"
-    console.log(objDate.toLocaleString(locale, { month: "short" }));
+    if(dd < 10) {
+      dd='0'+dd
+    }
+
+    today = month + ' ' + dd
+
+    console.log(today);
+    // console.log(today.toLocaleString(locale, { month: "short" }));
 
     return (
       <header className="header">
