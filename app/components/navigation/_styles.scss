@@ -1,10 +1,3 @@
-.waffle {
-  height: 32px;
-  width: 32px;
-  border: 1px solid $dark;
-  background-color: $red;
-}
-
 .navigation {
   float: left;
   display: flex;
@@ -33,5 +26,42 @@
     text-transform: uppercase;
     margin-left: $space*5;
     margin-bottom: $space*2;
+  }
+
+  .waffle {
+    margin-bottom: $space*3;
+    padding: $space;
+    height: 27px;
+    width: 27px;
+    border: 1px solid $dark;
+    background-color: $pale;
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: $space;
+    }
+
+    .dot {
+      display: inline-block;
+      height: auto;
+      width: 5px;
+    }
+
+    .circle {
+      position: relative;
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+      padding-top: 100%;
+      background: $dark;
+
+      &:hover {
+        background: $red !important;
+        transition: 150ms linear all;
+      }
+    }
   }
 }

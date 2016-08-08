@@ -5,8 +5,7 @@
   padding: $space;
 
   &-title {
-    margin-bottom: 0;
-    padding: $space;
+    padding: 0 $space;
     font-size: $text-default;
     font-weight: $medium;
     letter-spacing: $ls-sm;
@@ -19,10 +18,9 @@
     }
 
     &:hover {
-      background-color: $light;
-      transition: 250ms linear all;
+      transition: 300ms linear all;
       border-radius: 3px;
-      color: $grey;
+      color: $red;
       cursor: pointer;
     }
   }
