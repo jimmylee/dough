@@ -23,49 +23,52 @@ export default React.createClass({
 
     return (
       <nav className="navigation">
-        <div className="waffle">
-          <div className="waffle-row">
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-          </div>
-          <div className="waffle-row">
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-          </div>
-          <div className="waffle-row">
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-            <span className="dot">
-              <div className="circle">
-              </div>
-            </span>
-          </div>
+        <div className="navigation-header">
+          <span className="waffle">
+            <div className="waffle-row">
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+            </div>
+            <div className="waffle-row">
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+            </div>
+            <div className="waffle-row">
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+              <span className="dot">
+                <div className="circle">
+                </div>
+              </span>
+            </div>
+          </span>
+          <span className="text-mark">FWaffle</span>
         </div>
         <span className="navigation-heading">Galleries</span>
         {linkElements}

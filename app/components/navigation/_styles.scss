@@ -1,5 +1,4 @@
 .navigation {
-  float: left;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -19,6 +18,11 @@
     background-color: $grey-light;
   }
 
+  &-header {
+    display: flex;
+    flex-direction: row;
+  }
+
   &-heading {
     font-size: $text-small;
     font-weight: $semibold;
@@ -27,41 +31,54 @@
     margin-left: $space*5;
     margin-bottom: $space*2;
   }
+}
 
-  .waffle {
-    margin-bottom: $space*3;
-    padding: $space;
-    height: 27px;
-    width: 27px;
-    border: 1px solid $dark;
-    background-color: $pale;
+.text-mark {
+  margin-left: $space;
+  padding: 0 $space*2;
+  height: 34px;
+  font-size: $text-default;
+  font-weight: $medium;
+  letter-spacing: $ls-md;
+  line-height: 34px;
+  text-transform: uppercase;
+  border: 1px solid $dark;
+}
 
-    &-row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: $space;
-    }
+.waffle {
+  display: inline;
+  margin-bottom: $space*4;
+  padding: 6px;
+  height: 22px;
+  width: 22px;
+  border: 1px solid $dark;
+  background-color: $pale;
 
-    .dot {
-      display: inline-block;
-      height: auto;
-      width: 5px;
-    }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
 
-    .circle {
-      position: relative;
-      border-radius: 50%;
-      width: 100%;
-      height: auto;
-      padding-top: 100%;
-      background: $dark;
+  .dot {
+    display: inline-block;
+    height: auto;
+    width: 4px;
+  }
 
-      &:hover {
-        background: $red !important;
-        transition: 150ms linear all;
-      }
+  .circle {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    background: $dark;
+
+    &:hover {
+      background: $red !important;
+      transition: 150ms linear all;
     }
   }
 }

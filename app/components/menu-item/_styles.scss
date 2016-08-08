@@ -9,23 +9,16 @@
     font-size: $text-default;
     font-weight: $medium;
     letter-spacing: $ls-sm;
-    text-decoration: none;
+    line-height: 1.15rem;
     text-transform: capitalize;
     color: $dark;
-
-    &:link {
-      text-decoration: none;
-    }
+    transition: 100ms linear all;
 
     &:hover {
-      transition: 300ms linear all;
+      margin-left: $space/2;
       border-radius: 3px;
       color: $red;
       cursor: pointer;
     }
-  }
-
-  &-description {
-    font-size: .9rem;
   }
 }
