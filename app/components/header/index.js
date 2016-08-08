@@ -5,8 +5,8 @@ import React from 'react';
 function getToday() {
   const today = new Date(),
         dd = today.getDate(),
-        locale = "en-us",
-        month = today.toLocaleString(locale, { month: "long" });
+        locale = 'en-us',
+        month = today.toLocaleString(locale, { month: 'long' });
 
   return `${month} ${dd}`;
 }
@@ -16,11 +16,11 @@ export default React.createClass({
     // console.log(today.toLocaleString(locale, { month: "short" }));
     const today = getToday();
     console.log(today);
-    
+
     return (
       <header className="header">
         <span className="current-date">
-          {today}
+          Today is {today}
         </span>
       </header>
     );

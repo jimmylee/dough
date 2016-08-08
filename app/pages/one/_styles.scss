@@ -18,19 +18,4 @@
   h4 {
     font-size: 2rem;
   }
-
-  .exhibit{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-    &-thumbnail {
-      display: inline-block;
-      margin: $space*3 $space*3 0 0;
-      height: 240px;
-      width: 20%;
-      min-width: 200px;
-      background-color: $golden;
-    }
-  }
 }

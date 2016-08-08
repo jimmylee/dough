@@ -9,7 +9,7 @@ export default React.createClass({
   },
 
   render() {
-    const {title, description} = this.props;
+    const {title} = this.props;
 
     return (
       <header className="menuItem">

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Button from '../../components/button';
+import Exhibit from '../../components/exhibit';
 import { connect } from 'react-redux';
 import { routeActions } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
@@ -38,14 +39,7 @@ const pageOne = React.createClass({
 
     return (
       <div className="pageOne">
-        <div className="exhibit-thumbnail">
-        </div>
-        <div className="exhibit-thumbnail">
-        </div>
-        <div className="exhibit-thumbnail">
-        </div>
-        <div className="exhibit-thumbnail">
-        </div>
+        <Exhibit />
 
         <p>
           The Red Mage is the classic jack of all trades, a profession whose versatility stands in stark contrast to the regimented, often restrictive training of other Mage Jobs. Indeed, rather than keeping their studies confined to a single school of magic, these versatile spellcasters satisfy curiosity by dabbling in a little bit of everything: White Magic, Black Magic, Time Magic, swordsmanship…

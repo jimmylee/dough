@@ -1,0 +1,37 @@
+.exhibit{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+
+  &-preview {
+    display: block;
+    width: 100%;
+    padding: $space*6;
+    border-top: 1px solid $grey-light;
+
+    &-heading {
+      font-size: 32px;
+      font-family: $assistant;
+      font-weight: $bold;
+    }
+
+    &-gallery {
+      color: $dark;
+    }
+
+    &-dates {
+      color: $grey;
+      font-size: $text-default;
+    }
+  }
+
+  &-thumbnail {
+    display: inline-block;
+    margin: $space*3 $space*3 0 0;
+    height: 240px;
+    width: 20%;
+    min-width: 200px;
+    background-color: $golden;
+  }
+}

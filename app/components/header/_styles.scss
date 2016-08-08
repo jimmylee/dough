@@ -1,13 +1,16 @@
 .header {
+  width: 100%;
   box-sizing: border-box;
+  margin-top: $space*4;
   padding: $space*3;
-  box-shadow: inset 0 -1px 0 0 $grey-light;
   font-family: $assistant;
 }
 
 .current-date {
-  font-family: $assistant;
-  font-size: $text-default;
-  font-weight: $medium;
-  letter-spacing: $ls-md;
+  color: $grey;
+  font-family: $menlo;
+  font-size: $text-small;
+  font-weight: $regular;
+  letter-spacing: $ls-sm;
+  text-transform: uppercase;
 }
