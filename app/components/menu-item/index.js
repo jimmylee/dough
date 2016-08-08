@@ -13,7 +13,7 @@ export default React.createClass({
 
     return (
       <header className="menuItem">
-        <a className="menuItem-title" children={title} />
+        <text className="menuItem-title" children={title} />
       </header>
     );
   }

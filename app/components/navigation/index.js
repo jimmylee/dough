@@ -68,7 +68,7 @@ export default React.createClass({
               </span>
             </div>
           </span>
-          <span className="text-mark">FWaffle</span>
+          <span className="text-mark">F·Waffle</span>
         </div>
         <span className="navigation-heading">Galleries</span>
         {linkElements}
