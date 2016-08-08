@@ -5,9 +5,9 @@ import { Link } from 'react-router';
 import MenuItem from '../menu-item';
 
 const links = [
-  {url: '/one', title: 'one', description: 'this is one'},
-  {url: '/two', title: 'two', description: 'this is two'},
-  {url: '/three', title: 'three', description: 'this is three'}
+  {url: '/one', title: 'Fraenkel', description: 'this is one'},
+  {url: '/two', title: 'Hashimoto Contemporary', description: 'this is two'},
+  {url: '/three', title: 'Johansson Projects', description: 'this is three'}
 ];
 
 export default React.createClass({
@@ -23,6 +23,7 @@ export default React.createClass({
 
     return (
       <nav className="navigation">
+        <span className="navigation-heading">Galleries</span>
         {linkElements}
       </nav>
     );

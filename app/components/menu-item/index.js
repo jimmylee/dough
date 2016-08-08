@@ -13,8 +13,7 @@ export default React.createClass({
 
     return (
       <header className="menuItem">
-        <strong className="menuItem-title" children={title} />
-        <dfn className="menuItem-description" children={description} />
+        <a className="menuItem-title" children={title} />
       </header>
     );
   }

@@ -1,6 +1,37 @@
+.waffle {
+  height: 32px;
+  width: 32px;
+  border: 1px solid $dark;
+  background-color: $red;
+}
+
 .navigation {
+  float: left;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 200px;
   box-shadow: inset -1px 0 0 0 red;
+  font-family: $assistant;
+  padding: $space*3;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 28px;
+    z-index: -1;
+    width: 1px;
+    content: "";
+    background-color: $grey-light;
+  }
+
+  &-heading {
+    font-size: $text-small;
+    font-weight: $semibold;
+    letter-spacing: $ls-sm;
+    text-transform: uppercase;
+    margin-left: $space*5;
+    margin-bottom: $space*2;
+  }
 }

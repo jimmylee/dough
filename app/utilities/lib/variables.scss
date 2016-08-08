@@ -1,0 +1,26 @@
+// These are our margin and padding utility spaces. The default step size we
+// use is 6px. This gives us a key of:
+//    0 => 0px
+//    1 => 3px
+//    2 => 6px
+//    3 => 12px
+//    4 => 24px
+//    5 => 36px
+$space: 6px !default;
+$spaces: (
+  0,
+  round($space / 2),
+  $space,
+  $space * 2,
+  $space * 4,
+  $space * 6,
+  $space * 8
+) !default;
+
+// Aliases for easy use
+$space1: nth($spaces, 2) !default; // 3px
+$space2: nth($spaces, 3) !default; // 6px
+$space3: nth($spaces, 4) !default; // 12px
+$space4: nth($spaces, 5) !default; // 24px
+$space5: nth($spaces, 6) !default; // 36px
+$space6: nth($spaces, 7) !default; // 48px
