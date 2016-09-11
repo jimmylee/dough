@@ -15,37 +15,35 @@ export default React.createClass({
         <div className="exhibit-thumbnail"></div>
         <div className="exhibit-thumbnail"></div>
         <div className="exhibit-thumbnail"></div>
+
         <div className="exhibit-preview mt-6">
-          <span className="exhibit-preview-heading">
-            Vitality & Verve in the third dimension
-          </span>
-          <span className="exhibit-preview-thumbnail-item"></span>
-          <span className="exhibit-preview-thumbnail-item"></span>
-          <span className="exhibit-preview-thumbnail-item"></span>
-          <div className="exhibit-preview-description">
-            <span className="dark text-default medium ls-sm mr-3">Thinkspace</span>
+          <div className="exhibit-preview-thumbnail">
+            <span className="m-2"></span>
+          </div>
+          <div className="exhibit-preview-heading">
+            <a href="#" className="link-dark">Vitality & Verve in the third dimension</a>
+          </div>
+          <div className="exhibit-preview-description mt-3">
+            <a href="#" className="link-dark text-default ls-sm mr-3">Thinkspace</a>
             <span className="grey text-small ls-xs">Jun 2 – Jun 25</span>
+            <span className="bg-red white text-small rounded ml-3 px-2 py-1">Ending soon</span>
           </div>
         </div>
+
         <div className="exhibit-preview mt-6">
-          <span className="exhibit-preview-heading">
-            Summer Group Show 2016
-          </span>
-          <div className="exhibit-preview-description">
-            <span className="dark text-default medium ls-sm mr-3">Hashimoto Contemporary</span>
+          <div className="exhibit-preview-thumbnail">
+            <span className="m-2"></span>
+          </div>
+          <div className="exhibit-preview-heading">
+            <a href="#" className="link-dark">Ravi Zupa: The Turmoil of Being</a>
+          </div>
+          <div className="exhibit-preview-description mt-3">
+            <a href="#" className="link-dark text-default ls-sm mr-3">Hashimoto Contemporary</a>
             <span className="grey text-small ls-xs">Jun 2 – Jun 25</span>
+            <span className="bg-red white text-small rounded ml-3 px-2 py-1">Ending soon</span>
           </div>
         </div>
-        <div className="exhibit-preview mt-6">
-          <span className="exhibit-preview-heading">
-            Exhibit Title
-          </span>
-          <span className="exhibit-preview-thumbnail-item"></span>
-          <div className="exhibit-preview-description">
-            <span className="dark text-default medium ls-sm mr-3">Gallery</span>
-            <span className="grey text-small ls-xs">Show dates</span>
-          </div>
-        </div>
+
       </div>
     );
   }

@@ -10,10 +10,10 @@ $text-small: 12px !default;
 
 // Weight
 
-$regular: 400 !default;
-$medium: 600 !default;
-$semibold: 700 !default;
-$bold: 900 !default;
+$fw-regular: 400 !default;
+$fw-medium: 600 !default;
+$fw-semibold: 700 !default;
+$fw-bold: 900 !default;
 
 // Letterspacing
 
@@ -21,15 +21,17 @@ $ls-xs: 0.5px;
 $ls-sm: 1px;
 $ls-md: 1.6px;
 
-// Use utilities to keep things clean
+// Font families
 
-.assistant {
+.font-assistant {
   font-family: $assistant !important;
 }
 
-.menlo {
+.font-menlo {
   font-family: $menlo !important;
 }
+
+// Text sizes
 
 .text-default {
   font-size: $text-default !important;
@@ -39,21 +41,25 @@ $ls-md: 1.6px;
   font-size: $text-small !important;
 }
 
-.regular {
-  font-weight: $regular !important;
+// Font weights
+
+.fw-regular {
+  font-weight: $fw-regular !important;
 }
 
-.medium {
-  font-weight: $medium !important;
+.fw-medium {
+  font-weight: $fw-medium !important;
 }
 
-.semibold {
-  font-weight: $semibold !important;
+.fw-semibold {
+  font-weight: $fw-semibold !important;
 }
 
-.bold {
-  font-weight: $bold !important;
+.fw-bold {
+  font-weight: $fw-bold !important;
 }
+
+// Letter spacing
 
 .ls-xs {
   letter-spacing: $ls-xs;
@@ -65,4 +71,17 @@ $ls-md: 1.6px;
 
 .ls-md {
   letter-spacing: $ls-md;
+}
+
+// Links
+
+a.link-dark {
+  color: $dark;
+  font-style: normal;
+  text-decoration: none;
+  transition: 100ms linear all;
+
+  &:hover {
+    color: $grey;
+  }
 }

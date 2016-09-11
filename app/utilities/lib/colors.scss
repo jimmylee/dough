@@ -8,8 +8,9 @@ $light:              #f8f8f8 !default;
 $red:                #fb1530 !default;
 $golden:             #faeed2 !default;
 $white:              #ffffff !default;
+$cyan:               #12D9BA !default;
 
-// Use utilities so we can keep our css clean yay
+// Font colors
 
 .pale {
   color: $pale !important;
@@ -35,10 +36,36 @@ $white:              #ffffff !default;
   color: $red !important;
 }
 
+.cyan {
+  color: $cyan !important;
+}
+
 .golden {
   color: $golden !important;
 }
 
 .white {
   color: $white !important;
+}
+
+// Background colors
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-grey-light {
+  background-color: $grey-light;
+}
+
+.bg-cyan {
+  background-color: $cyan;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-pale {
+  background-color: $pale;
 }

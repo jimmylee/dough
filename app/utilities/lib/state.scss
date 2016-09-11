@@ -1,0 +1,18 @@
+// Main
+
+$new:                $cyan !default;
+$ending:             $red !default;
+
+// Font colors
+
+.exhibit-is-new {
+  height: 4px;
+  width: 4px;
+  background-color: $new !important;
+}
+
+.exhibit-is-ending {
+  height: 4px;
+  width: 4px;
+  background-color: $red !important;
+}

@@ -7,28 +7,28 @@ justify-content: flex-start;
   &-preview {
     display: block;
     width: 100%;
-    padding: $space*6;
+    padding: $space*4;
     border-top: 1px solid $grey-light;
 
     &-heading {
+      float: left;
+      width: 70%;
       font-size: 32px;
       font-family: $assistant;
-      font-weight: $bold;
+      font-weight: $fw-bold;
     }
 
     &-description {
-      display: block;
-      width: auto;
+      float: left;
+      width: 70%;
+      font-weight: $fw-medium;
     }
 
-    &-thumbnail-item {
+    &-thumbnail {
       float: right;
-      display: inline-block;
-      margin-left: $space*2;
-      height: 80px;
-      width: 80px;
+      height: 96px;
+      width: 96px;
       background-color: $golden;
-      vertical-align: top;
     }
   }
 

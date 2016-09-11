@@ -29,7 +29,7 @@
 
   &-heading {
     font-size: $text-small;
-    font-weight: $semibold;
+    font-weight: $fw-semibold;
     letter-spacing: $ls-sm;
     text-transform: uppercase;
     margin-left: $space*5;
@@ -42,7 +42,7 @@
   padding: 0 $space*2;
   height: 34px;
   font-size: $text-default;
-  font-weight: $medium;
+  font-weight: $fw-medium;
   letter-spacing: $ls-md;
   line-height: 34px;
   text-transform: uppercase;
