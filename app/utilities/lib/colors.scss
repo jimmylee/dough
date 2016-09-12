@@ -8,7 +8,7 @@ $light:              #f8f8f8 !default;
 $red:                #fb1530 !default;
 $golden:             #faeed2 !default;
 $white:              #ffffff !default;
-$cyan:               #12D9BA !default;
+$green:              #42F014 !default;
 
 // Font colors
 
@@ -36,8 +36,8 @@ $cyan:               #12D9BA !default;
   color: $red !important;
 }
 
-.cyan {
-  color: $cyan !important;
+.green {
+  color: $green !important;
 }
 
 .golden {
@@ -56,10 +56,6 @@ $cyan:               #12D9BA !default;
 
 .bg-grey-light {
   background-color: $grey-light;
-}
-
-.bg-cyan {
-  background-color: $cyan;
 }
 
 .bg-red {

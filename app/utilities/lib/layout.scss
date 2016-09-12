@@ -1,5 +1,17 @@
 // For building pretty boxes
 
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
 .rounded {
   border-radius: 3px !important;
 }

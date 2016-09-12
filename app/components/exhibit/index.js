@@ -24,7 +24,7 @@ export default React.createClass({
             <a href="#" className="link-dark">Vitality & Verve in the third dimension</a>
           </div>
           <div className="exhibit-preview-description mt-3">
-            <a href="#" className="link-dark text-default ls-sm mr-3">Thinkspace</a>
+            @ <a href="#" className="link-dark text-default ls-sm mr-3">Thinkspace</a>
             <span className="grey text-small ls-xs">Jun 2 – Jun 25</span>
             <span className="bg-red white text-small rounded ml-3 px-2 py-1">Ending soon</span>
           </div>
@@ -38,9 +38,10 @@ export default React.createClass({
             <a href="#" className="link-dark">Ravi Zupa: The Turmoil of Being</a>
           </div>
           <div className="exhibit-preview-description mt-3">
-            <a href="#" className="link-dark text-default ls-sm mr-3">Hashimoto Contemporary</a>
-            <span className="grey text-small ls-xs">Jun 2 – Jun 25</span>
-            <span className="bg-red white text-small rounded ml-3 px-2 py-1">Ending soon</span>
+            @ <a href="#" className="link-dark text-default ls-sm">Hashimoto Contemporary</a>
+            <span className="grey text-small ls-xs ml-3">Jun 2 – Jun 25</span>
+            <div className="exhibit-is-new ml-3"></div>
+            <span className="text-small">New</span>
           </div>
         </div>
 

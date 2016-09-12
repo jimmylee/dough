@@ -1,18 +1,26 @@
 // Main
 
-$new:                $cyan !default;
+$new:                $green !default;
 $ending:             $red !default;
 
 // Font colors
 
 .exhibit-is-new {
-  height: 4px;
-  width: 4px;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  margin-right: 4px;
+  border-radius: 3px;
   background-color: $new !important;
+  vertical-align: middle;
 }
 
 .exhibit-is-ending {
-  height: 4px;
-  width: 4px;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  margin-right: 4px;
+  border-radius: 3px;
   background-color: $red !important;
+  vertical-align: middle;
 }
