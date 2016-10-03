@@ -1,6 +1,5 @@
 // Family
 
-$assistant: ('Assistant', sans-serif) !default;
 $menlo: ('Menlo', monospace, serif) !default;
 
 // Size
@@ -23,10 +22,6 @@ $ls-md: 1.6px;
 
 // Font families
 
-.font-assistant {
-  font-family: $assistant !important;
-}
-
 .font-menlo {
   font-family: $menlo !important;
 }
@@ -45,14 +40,6 @@ $ls-md: 1.6px;
 
 .fw-regular {
   font-weight: $fw-regular !important;
-}
-
-.fw-medium {
-  font-weight: $fw-medium !important;
-}
-
-.fw-semibold {
-  font-weight: $fw-semibold !important;
 }
 
 .fw-bold {
