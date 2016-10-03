@@ -38,14 +38,18 @@ const pageOne = React.createClass({
     return (
       <div className="pageOne">
         <center>
-          <img className="coolpic" src="../images/01.gif" />
-          <h4 className="coolpic-caption"><span className="red">33 minutes</span> — Heart explosion</h4>
-
-          <img className="coolpic" src="../images/02.gif" />
-          <h4 className="coolpic-caption"><span className="red">20 minutes</span> — Me vs U</h4>
-
-          <img className="coolpic" src="../images/03.gif" />
-          <h4 className="coolpic-caption"><span className="red">5 minutes</span> — Ramen babies</h4>
+          <div className="cool">
+            <img className="pic" src="../images/01.gif" />
+            <h4 className="pic-caption"><span className="red">33 minutes</span> — Heart explosion</h4>
+          </div>
+          <div className="cool">
+            <img className="pic" src="../images/02.gif" />
+            <h4 className="pic-caption"><span className="red">20 minutes</span> — Me vs U</h4>
+          </div>
+          <div className="cool">
+            <img className="pic" src="../images/03.gif" />
+            <h4 className="pic-caption"><span className="red">5 minutes</span> — Ramen babies</h4>
+          </div>
         </center>
       </div>
     );
