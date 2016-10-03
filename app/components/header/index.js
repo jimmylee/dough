@@ -10,7 +10,7 @@ export default React.createClass({
           Happy Birthday <span className="red">Jimmy</span> &#4113;
         </h1>
         <span className="font-menlo text-small">
-          For your birthday this year, I decided to give you 24 hours of art and animation.
+          For your <span className="red">28th</span> birthday this year, I decided to give you an excessively long digital letter, filled with 24 hours of art and animation.
         </span>
       </header>
     );
