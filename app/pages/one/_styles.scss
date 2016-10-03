@@ -18,12 +18,9 @@
   }
 
   .cool {
-    margin-top: 32px;
-    padding: 24px 0;
-    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
 
     .pic {
-      padding: 12px 0;
       width: 100%;
     }
   }
@@ -32,6 +29,14 @@
     font-family: $menlo;
     font-size: $text-small;
     font-weight: $fw-regular;
-    margin: 0;
+    margin: 32px 0 0 0;
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
   }
 }
