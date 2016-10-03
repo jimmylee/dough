@@ -1,21 +1,10 @@
 // Main
 
-$pale:               #faf8f8 !default;
 $dark:               #1d1d1d !default;
 $grey:               #a2a0a0 !default;
-$grey-light:         #dcd8d8 !default;
-$light:              #f8f8f8 !default;
-$red:                #fb1530 !default;
-$golden:             #faeed2 !default;
-$white:              #ffffff !default;
-$green:              #42F014 !default;
+$red:                #eb0a3b !default;
 
 // Font colors
-
-.pale {
-  color: $pale !important;
-}
-
 .dark {
   color: $dark !important;
 }
@@ -24,44 +13,6 @@ $green:              #42F014 !default;
   color: $grey !important;
 }
 
-.grey-light {
-  color: $grey-light !important;
-}
-
-.light {
-  color: $light !important;
-}
-
 .red {
   color: $red !important;
-}
-
-.green {
-  color: $green !important;
-}
-
-.golden {
-  color: $golden !important;
-}
-
-.white {
-  color: $white !important;
-}
-
-// Background colors
-
-.bg-white {
-  background-color: $white;
-}
-
-.bg-grey-light {
-  background-color: $grey-light;
-}
-
-.bg-red {
-  background-color: $red;
-}
-
-.bg-pale {
-  background-color: $pale;
 }

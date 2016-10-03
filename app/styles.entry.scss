@@ -15,19 +15,3 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-
-dfn {
-  text-decoration: none;
-  font-style: normal;
-}
-
-button {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-
-  &:focus {
-    outline: 0;
-    border: 0;
-  }
-}

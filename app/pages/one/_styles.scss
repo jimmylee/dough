@@ -1,6 +1,6 @@
 .pageOne {
-  padding: $space*3;
   font-family: $assistant;
+  width: 100%;
 
   h1 {
     font-size: 5rem;
@@ -16,5 +16,13 @@
 
   h4 {
     font-size: 2rem;
+  }
+
+  .coolpic {
+    width: 480px;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
   }
 }

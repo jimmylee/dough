@@ -1,13 +1,11 @@
 .header {
   width: 100%;
   box-sizing: border-box;
-  margin-top: $space*4;
-  padding: $space*3;
   font-family: $assistant;
 }
 
-.current-date {
-  color: $grey;
+.heading {
+  color: $dark;
   font-family: $menlo;
   font-size: $text-small;
   font-weight: $fw-regular;

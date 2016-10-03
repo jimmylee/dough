@@ -1,6 +1,4 @@
-# Forked from :sparkles: :sparkles: :sparkles: [meanjim/dough](https://github.com/meanjim/dough) :sparkles: :sparkles: :sparkles: in order to make [Fantastic-Waffle](https://github.com/pifafu/fantastic-waffle)
-
-<img src="https://d17oy1vhnax1f7.cloudfront.net/items/2R0O3W152Y2k063P0q17/example.gif?v=58bd2e43">
+# Happy Birthday :), from me to you
 
 ## A really easy setup
 

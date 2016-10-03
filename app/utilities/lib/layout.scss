@@ -17,13 +17,17 @@
 }
 
 .border {
-  border: 1px solid $grey-light !important;
+  border: 1px solid $grey !important;
 }
 
 .border-top {
-  border-top: 1px solid $grey-light !important;
+  border-top: 1px solid $grey !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid $grey-light !important;
+  border-bottom: 1px solid $grey !important;
+}
+
+.width-full {
+  width: 100% !important;
 }

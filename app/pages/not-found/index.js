@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import Button from '../../components/button';
 import { connect } from 'react-redux';
 import { routeActions } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
@@ -44,10 +43,6 @@ const notFoundPage = React.createClass({
         <h2>NOT FOUND</h2>
         <h3>NOT FOUND</h3>
         <h4>NOT FOUND</h4>
-
-        <Button onClick={() => {this.handleGetJSON()}}>
-          Clicking this button will get JSON randomly from Giphy as a test.
-        </Button>
 
         {gifElements}
       </div>

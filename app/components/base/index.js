@@ -3,7 +3,6 @@
 import React from 'react';
 import Header from '../header';
 import Footer from '../footer';
-import Navigation from '../navigation';
 
 export default React.createClass({
   propTypes: {
@@ -15,10 +14,7 @@ export default React.createClass({
 
     return (
       <section className="base">
-        <section className="base-left">
-          <Navigation />
-        </section>
-        <section className="base-right">
+        <section>
           <Header />
           {children}
           <Footer />
