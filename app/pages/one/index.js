@@ -39,6 +39,7 @@ const pageOne = React.createClass({
       <div className="pageOne">
         <center>
           <img className="coolpic" src="../images/happybday.gif" />
+          <h4 className="coolpic-caption"><span className="red">33 minutes</span> — Heart explosion</h4>
         </center>
       </div>
     );

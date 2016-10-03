@@ -18,10 +18,14 @@
   }
 
   .coolpic {
-    width: 480px;
+    width: 100%;
+    margin: 12px 0;
+  }
 
-    @media screen and (max-width: 480px) {
-      width: 100%;
-    }
+  .coolpic-caption {
+    font-family: $menlo;
+    font-size: $text-small;
+    font-weight: $fw-regular;
+    margin: 0;
   }
 }
