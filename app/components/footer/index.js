@@ -6,7 +6,7 @@ export default React.createClass({
   render() {
     return (
       <footer className="footer font-menlo text-small">
-        milk & cookies <span className="red">&#x2665;</span> kathy
+        milk & cookies <span className="red">&#4113;</span> kathy
       </footer>
     );
   }

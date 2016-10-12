@@ -7,6 +7,12 @@
     .pic {
       width: 100%;
     }
+
+    p {
+      font-family: $menlo;
+      font-size: $text-small;
+      margin: 32px 0;
+    }
   }
 
   .pic-caption {

@@ -1,15 +1,38 @@
 .header {
   width: 100%;
   margin: 32px 0;
+  padding-bottom: 32px;
   box-sizing: border-box;
+  border-bottom: 1px solid $grey;
+
+  .fuck {
+    font-size: $text-small - 1;
+    color: #777;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $dark;
+    transition: 150ms linear all;
+  }
+
+  a:hover {
+    color: $red;
+  }
+
+  p {
+    line-height: 22px;
+  }
 }
 
 .heading {
   color: $dark;
   font-family: $menlo;
-  font-size: $text-small;
-  font-weight: $fw-regular;
+  font-size: $text-default;
+  font-weight: $fw-bold;
   letter-spacing: $ls-sm;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
