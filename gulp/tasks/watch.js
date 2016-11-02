@@ -1,9 +1,7 @@
-'use strict';
-
 import gulp from 'gulp';
 import config from '../config';
 
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', ['browser-sync'], () => {
   gulp.watch(config.scripts.src, [
     'eslint'
   ]);

@@ -1,5 +1,3 @@
-'use strict';
-
 const ASSET_EXTENSIONS = [
   'js',
   'jsx',

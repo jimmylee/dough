@@ -1,11 +1,7 @@
-'use strict';
-
 import gulp from 'gulp';
 import runSequence from 'run-sequence';
 
-gulp.task('production', ['reset-build-directory'], function(cb) {
-  cb = cb || function() {};
-
+gulp.task('production', ['reset-build-directory'], (callback) => {
   global.isProduction = true;
 
   runSequence([
@@ -16,5 +12,5 @@ gulp.task('production', ['reset-build-directory'], function(cb) {
     'copy-index-html-to-build-directory',
     'copy-icons-to-build-directory',
     'eslint'
-  ], 'deploy-generated-assets', cb);
+  ], 'postbuild', callback);
 });

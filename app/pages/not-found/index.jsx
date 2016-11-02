@@ -1,9 +1,7 @@
-'use strict';
-
 import React from 'react';
-import Button from '../../components/button';
+import Button from '../../components/button/index';
+
 import { connect } from 'react-redux';
-import { routeActions } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../../actions/index';
 
@@ -16,7 +14,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return Object.assign({}, {
     actions: bindActionCreators(actions, dispatch)
-  }, routeActions);
+  });
 }
 
 const notFoundPage = React.createClass({
@@ -41,9 +39,6 @@ const notFoundPage = React.createClass({
     return (
       <div className="pageNotFound">
         <h1>NOT FOUND</h1>
-        <h2>NOT FOUND</h2>
-        <h3>NOT FOUND</h3>
-        <h4>NOT FOUND</h4>
 
         <Button onClick={() => {this.handleGetJSON()}}>
           Clicking this button will get JSON randomly from Giphy as a test.

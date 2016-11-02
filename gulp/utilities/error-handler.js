@@ -1,8 +1,6 @@
-'use strict';
+const desktopNotify = require('gulp-notify');
 
-var desktopNotify = require('gulp-notify');
-
-module.exports = function(error) {
+module.exports = (error) => {
   if( !global.isProduction ) {
     var args = Array.prototype.slice.call(arguments);
 

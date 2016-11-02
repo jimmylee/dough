@@ -1,12 +1,10 @@
-'use strict';
-
-var fs = require('fs');
-var path = require('path');
-var useOnlyScripts = function(name) {
+const fs = require('fs');
+const path = require('path');
+const useOnlyScripts = (name) => {
   return /(\.(js|coffee)$)/i.test(path.extname(name));
 };
-var tasks = fs.readdirSync('./gulp/tasks/').filter(useOnlyScripts);
+const tasks = fs.readdirSync('./gulp/tasks/').filter(useOnlyScripts);
 
-tasks.forEach(function(task) {
+tasks.forEach((task) => {
   require('./tasks/' + task);
 });

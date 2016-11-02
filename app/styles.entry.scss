@@ -1,3 +1,6 @@
+$mobileBreakpointPx: 420px;
+$mobileBreakpoint: 'screen and (max-width: #{$mobileBreakpointPx})';
+
 html,
 body,
 ul,
@@ -11,17 +14,12 @@ html {
   font-size: 16px;
 }
 
-body {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 dfn {
   text-decoration: none;
   font-style: normal;
 }
 
-button {
+button, select, input {
   background-color: transparent;
   border: 0;
   outline: 0;

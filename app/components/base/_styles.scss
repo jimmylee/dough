@@ -5,23 +5,22 @@
   margin: 0;
   padding: 0;
 
+  @media #{$mobileBreakpoint} {
+    flex-direction: column-reverse;
+  }
+
   &-left {
+    @media #{$mobileBreakpoint} {
+      width: 100%;
+    }
+
     width: 280px;
     flex-shrink: 0;
   }
 
   &-right {
     width: 100%;
+    min-width: 25%;
     position: relative;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .base {
-    flex-direction: column-reverse;
-
-    &-left {
-      width: 100%;
-    }
   }
 }

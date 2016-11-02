@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 
 export default React.createClass({
@@ -12,9 +10,9 @@ export default React.createClass({
     const {title, description} = this.props;
 
     return (
-      <header className="menuItem">
-        <strong className="menuItem-title" children={title} />
-        <dfn className="menuItem-description" children={description} />
+      <header className="menu-item">
+        <strong className="menu-item-title" children={title} />
+        <dfn className="menu-item-description" children={description} />
       </header>
     );
   }

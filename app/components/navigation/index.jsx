@@ -1,8 +1,6 @@
-'use strict';
-
 import React from 'react';
+import MenuItem from '../menu-item/index';
 import { Link } from 'react-router';
-import MenuItem from '../menu-item';
 
 const links = [
   {url: '/one', title: 'one', description: 'this is one'},

@@ -1,5 +1,3 @@
-'use strict';
-
 import gulp from 'gulp';
 import fs from 'fs';
 import sass from 'gulp-sass';
@@ -12,7 +10,7 @@ import insert from 'gulp-insert';
 import glob from 'glob';
 import rename from 'gulp-rename';
 
-gulp.task('generate-sass-and-copy-to-build-directory', function() {
+gulp.task('generate-sass-and-copy-to-build-directory', () => {
   let allSassImports = '';
 
   let fileList = glob.sync('app/**/!(*.entry).scss', {});

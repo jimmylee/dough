@@ -1,9 +1,7 @@
-'use strict';
-
 import React from 'react';
-import Header from '../header';
-import Footer from '../footer';
-import Navigation from '../navigation';
+import Header from '../header/index';
+import Footer from '../footer/index';
+import Navigation from '../navigation/index';
 
 export default React.createClass({
   propTypes: {
