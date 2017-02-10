@@ -2,7 +2,7 @@
   "name": "dough",
   "version": "0.0.1",
   "description": "React/Redux, React-Router, Gulp, Browserify Starter Project",
-  "homepage": "https://github.com/meanJim/dough#readme",
+  "homepage": "https://github.com/jimmylee/dough#readme",
   "license": "MIT",
   "scripts": {
     "start": "gulp development",
@@ -22,7 +22,7 @@
     "demo"
   ],
   "bugs": {
-    "url": "https://github.com/meanjim/dough/issues"
+    "url": "https://github.com/jimmylee/dough/issues"
   },
   "devDependencies": {
     "babel-core": "^6.5.0",
@@ -68,7 +68,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/meanjim/dough.git"
+    "url": "https://github.com/jimmylee/dough.git"
   },
   "author": {
     "email": "jimmy-lee@live.com",
