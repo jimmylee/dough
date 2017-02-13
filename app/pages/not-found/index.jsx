@@ -17,21 +17,18 @@ function mapDispatchToProps(dispatch) {
   });
 }
 
-const notFoundPage = React.createClass({
-  propTypes: {
+class NotFoundPage extends React.Component {
+  static propTypes = {
     gifs: React.PropTypes.array,
     actions: React.PropTypes.object
-  },
+  };
 
-  handleGetJSON: function() {
-    const {actions} = this.props;
-    return actions.fetchData();
-  },
+  handleGetJSON = () => {
+    return this.props.actions.fetchData();
+  }
 
   render() {
-    const { gifs } = this.props;
-
-    const gifElements = gifs.map((each) => {
+    const gifElements = this.props.gifs.map((each) => {
       const { url, images } = each;
       return <img key={url} src={images.downsized.url} />;
     });
@@ -48,9 +45,9 @@ const notFoundPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(notFoundPage);
+  mapStateToProps,
+  mapDispatchToProps
+)(NotFoundPage);

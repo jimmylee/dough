@@ -6,10 +6,10 @@ import { Provider } from 'react-redux';
 import { reduxReducers } from './reducers/index';
 import { reduxMiddleware } from './utilities/middleware';
 
-import base from './components/base/index';
-import pageOne from './pages/one/index';
-import pageTwo from './pages/two/index';
-import pageNotFound from './pages/not-found/index';
+import Base from './components/base/index';
+import OneExamplePage from './pages/one/index';
+import TwoExamplePage from './pages/two/index';
+import NotFoundPage from './pages/not-found/index';
 
 const store = reduxMiddleware.createStore(reduxReducers);
 
@@ -20,11 +20,11 @@ if ( process.env.NODE_ENV !== 'production' ) {
 ReactDOM.render(
   <Provider store={ store }>
     <Router history={ reduxMiddleware.history }>
-      <Route path="/" component={ base }>
-        <IndexRoute component={ pageOne } />
-        <Route path="one" component={ pageOne } />
-        <Route path="two" component={ pageTwo } />
-        <Route path="*" component={ pageNotFound } />
+      <Route path="/" component={ Base }>
+        <IndexRoute component={ OneExamplePage } />
+        <Route path="one" component={ OneExamplePage } />
+        <Route path="two" component={ TwoExamplePage } />
+        <Route path="*" component={ NotFoundPage } />
       </Route>
     </Router>
   </Provider>,

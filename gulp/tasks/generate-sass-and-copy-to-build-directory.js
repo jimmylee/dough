@@ -22,8 +22,8 @@ gulp.task('generate-sass-and-copy-to-build-directory', () => {
   return gulp.src(config.styles.src)
     .pipe(insert.append(allSassImports))
     .pipe(sass({
-        sourceComments: !global.isProduction,
-        outputStyle: global.isProduction ? 'compressed' : 'nested'
+      sourceComments: !global.isProduction,
+      outputStyle: global.isProduction ? 'compressed' : 'nested'
     }))
     .on('error', handleErrors)
     .pipe(autoPrefixer('last 2 versions', '> 1%', 'ie 8'))

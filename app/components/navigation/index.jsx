@@ -8,7 +8,7 @@ const links = [
   {url: '/three', title: 'three', description: 'this is three'}
 ];
 
-export default React.createClass({
+export default class Navigation extends React.Component {
   render() {
     const linkElements = links.map((each) => {
       const { url, title, description } = each;
@@ -25,4 +25,4 @@ export default React.createClass({
       </nav>
     );
   }
-});
+}

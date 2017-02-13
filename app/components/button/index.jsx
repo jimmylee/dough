@@ -1,19 +1,17 @@
 import React from 'react';
 
-export default React.createClass({
-  propTypes: {
+export default class Button extends React.Component {
+  static propTypes = {
     children: React.PropTypes.node,
     onClick: React.PropTypes.func
-  },
+  };
 
   render() {
-    const { children, onClick } = this.props;
-
     return (
       <button className="button"
-        onClick={onClick}>
-        {children}
+        onClick={this.props.onClick}>
+        {this.props.children}
       </button>
     );
   }
-});
+};

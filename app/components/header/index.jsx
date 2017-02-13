@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default React.createClass({
+export default class Header extends React.Component {
   render() {
     return (
       <header className="header">
@@ -8,4 +8,4 @@ export default React.createClass({
       </header>
     );
   }
-});
+}

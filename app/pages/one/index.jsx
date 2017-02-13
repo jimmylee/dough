@@ -19,16 +19,15 @@ function mapDispatchToProps(dispatch) {
   });
 }
 
-const pageOne = React.createClass({
-  propTypes: {
+class OneExamplePage extends React.Component {
+  static propTypes = {
     likes: React.PropTypes.number,
     actions: React.PropTypes.object
-  },
+  };
 
-  handleLike: function(){
-    const { actions } = this.props;
-    return actions.likePostById(pageId);
-  },
+  handleLike = () => {
+    return this.props.actions.likePostById(pageId);
+  }
 
   render() {
     const { likes } = this.props;
@@ -52,9 +51,9 @@ const pageOne = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(pageOne);
+)(OneExamplePage);

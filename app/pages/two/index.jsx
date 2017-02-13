@@ -19,16 +19,15 @@ function mapDispatchToProps(dispatch) {
   });
 }
 
-const pageTwo = React.createClass({
-  propTypes: {
+class TwoExamplePage extends React.Component {
+  static propTypes = {
     likes: React.PropTypes.number,
     actions: React.PropTypes.object
-  },
+  };
 
-  handleLike: function(){
-    const { actions } = this.props;
-    return actions.likePostById(pageId);
-  },
+  handleLike = () => {
+    return this.props.actions.likePostById(pageId);
+  }
 
   render() {
     const { likes } = this.props;
@@ -48,9 +47,9 @@ const pageTwo = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(pageTwo);
+)(TwoExamplePage);
