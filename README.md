@@ -2,8 +2,6 @@
 
 A starting point for a static JavaScript application. Ideal for projects that just require hosting off of Amazon S3. Includes development and production NPM scripts, an easy to understand folder hierarchy, and example code to get started quickly.
 
-Used to build my [personal app](http://jimmyl.ee).
-
 ## First steps
 
 You'll need [git](https://git-scm.com), [nodejs 6+](https://nodejs.org/en/) and [npm](https://docs.npmjs.com) installed. Then you'll need to perform these steps.
